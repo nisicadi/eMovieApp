@@ -1,0 +1,15 @@
+<div class="watchlist-wrapper">
+  <h3 *ngIf="movies.length < 1">Loading...</h3>
+  <h3 *ngIf="toWatchMovies.length">Movies to watch</h3>
+  <div class="to-watch">
+    <app-movie-tile *ngFor="let movie of toWatchMovies" [imageUrl]="'assets/'+movie.image" [id]="movie.id"
+                    [isWatched]="movie.isWatched" [isFav]="movie.isFav" (favClick)="onFavClick(movie)"
+                    (watchedClick)="onWatchedClick(movie)"></app-movie-tile>
+</div>
+
+  <h3 *ngIf="toWatchMovies.length">Watched movies</h3>
+  <div class="to-watch">
+    <app-movie-tile *ngFor="let movie of watchedMovies" [imageUrl]="'assets/'+movie.image" [id]="movie.id"
+                    [isWatched]="movie.isWatched" [isFav]="movie.isFav" (favClick)="onFavClick(movie)"
+                    (watchedClick)="onWatchedClick(movie)"></app-movie-tile>
+  </div>

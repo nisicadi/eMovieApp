@@ -1,0 +1,23 @@
+.movie-tile-wrapper {
+  max-width: 200px;
+  max-height: 300px;
+}
+.movie-tile-wrapper .poster-wrapper img {
+  transition: all 0.5s ease;
+}
+.movie-tile-wrapper .poster-wrapper :hover {
+  transform: scale(1.1);
+}
+.movie-tile-wrapper .icon-bar {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  bottom: 29px;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  overflow: hidden;
+}
+.movie-tile-wrapper .icon-bar:hover {
+  bottom: 29px;
+  transform: scale(1);
+}

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\eMovieApp.core\eMovieApp.Core.csproj" />
+    <ProjectReference Include="..\eMovieApp.DTO\eMovieApp.DTO.csproj" />
+    <ProjectReference Include="..\eMovieApp.Repository\eMovieApp.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
